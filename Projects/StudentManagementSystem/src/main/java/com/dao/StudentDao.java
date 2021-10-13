@@ -1,5 +1,4 @@
 package com.dao;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,17 +6,15 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.bean.Student;
-
+import com.resource.DbConnection;
 public class StudentDao {
-
+	Connection con;
+	public StudentDao() {
+		con  = DbConnection.getDbConnection();		// only one time connection get loaded...
+	}
 	public int storeStudentRecord(Student student) {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root@123");
-			//Statement stmt = con.createStatement();
-			//int res = stmt.executeUpdate("insert into student values(1,'Raj',21)");
 			PreparedStatement pstmt = con.prepareStatement("insert into student values(?,?,?)");
 			pstmt.setInt(1,student.getSid());		
 			pstmt.setString(2, student.getName());
@@ -29,12 +26,9 @@ public class StudentDao {
 			return 0;
 		}
 	}
-	
 	public List<Student> retrieveStudentRecord() {
 		List<Student> listOfStd = new ArrayList<>();
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root@123");
 			PreparedStatement pstmt = con.prepareStatement("select * from student");
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
