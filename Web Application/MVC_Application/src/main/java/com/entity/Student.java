@@ -6,9 +6,16 @@ import javax.persistence.Id;
 @Entity
 public class Student {
 @Id
-private int sid;
-private String name;
-private int age;
+private int sid;									//PK		100
+private String name;							// Ajay 
+private int age;									// 21
+private int scid;									// FK   1122 
+public int getScid() {
+	return scid;
+}
+public void setScid(int scid) {
+	this.scid = scid;
+}
 public int getSid() {
 	return sid;
 }

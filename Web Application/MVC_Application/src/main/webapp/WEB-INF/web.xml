@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.controller.StudentController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>LoginController</servlet-name>
+  	<display-name>LoginController</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.LoginController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>StudentController</servlet-name>
   	<url-pattern>/StudentController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
   </servlet-mapping>
 </web-app>

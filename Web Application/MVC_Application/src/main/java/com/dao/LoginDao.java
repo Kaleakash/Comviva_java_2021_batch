@@ -9,12 +9,14 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import com.entity.Login;
 public class LoginDao {
-SessionFactory sf;
+
+	SessionFactory sf;
 	public LoginDao() {
 		Configuration con = new Configuration();
 		con.configure("hibernate.cfg.xml");
 		sf =con.buildSessionFactory();
 	}
+	
 	public boolean signUp(Login ll) {
 		try {
 			Session session  = sf.openSession();
@@ -29,12 +31,18 @@ SessionFactory sf;
 		}
 	}
 	
-	public int signIn(Login ll) {
+	public Login signIn(Login ll) {
 		Session session = sf.openSession();
-		Query<Login> qry = session.createQuery("select ll from Login ll where ll.email = :a and ll.pass = :b");
-		qry.setParameter("a", ll.getEmail());
-		qry.setParameter("b", ll.getPass());
+		Query qry = session.createQuery("select obj from Login obj where obj.email=:a and obj.pass=:b");
+		qry.setParameter("a", ll.getEmail());	// admin@gmail.com 
+		qry.setParameter("b", ll.getPass());	// admin 
 		List<Login> list = qry.list();
-		return list.size();		// it return 0 if record present else return 1. 
+		if(list.size()>0) {
+			return list.get(0);				// 
+		}else {
+			return null;
+		}
 	}
+	
+
 }

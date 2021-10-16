@@ -38,7 +38,7 @@ public class StudentDao {
 	
 	public List<Student> getAllStudentInfo() {
 		Session session  = sf.openSession();
-		Query<Student> qry = session.createQuery("select s from Student s");
+		Query qry = session.createQuery("select s from Student s");
 		List<Student> listOfStd = qry.list();
 		return listOfStd;
 	}
