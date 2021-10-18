@@ -1,9 +1,0 @@
-package com.service;
-
-import com.dao.StudentDao;
-
-public class StudentService {
-
-	StudentDao studentDao = new StudentDao();
-	
-}

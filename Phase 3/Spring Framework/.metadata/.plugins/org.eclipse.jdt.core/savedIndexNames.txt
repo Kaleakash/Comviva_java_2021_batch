@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\91990\Desktop\Comviva Training\Phase 3\Spring Framework\.metadata\.plugins\org.eclipse.jdt.core
+3407855714.index
+1070848005.index
+2355626496.index
+3802603719.index
+1489952112.index
+1750073629.index
