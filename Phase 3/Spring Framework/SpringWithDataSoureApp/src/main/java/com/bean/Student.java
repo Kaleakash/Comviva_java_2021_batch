@@ -2,7 +2,7 @@ package com.bean;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component			// <bean class="com.Student"></bean>
 public class Student {
 private int sid;
 private String name;

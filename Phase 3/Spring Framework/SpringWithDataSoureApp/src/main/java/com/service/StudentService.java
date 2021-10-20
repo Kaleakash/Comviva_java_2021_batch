@@ -1,5 +1,8 @@
 package com.service;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,4 +22,13 @@ public class StudentService {
 			return "Didn't store";
 		}
 	}
+	
+	public List<Map<String, Object>> getAllStudentInfo() {
+		return studentDao.retrieveStudentInfo();
+	}
+	
+	public List<Map<String, Object>> getStudentAndCourseInfo(String cname) {
+		return studentDao.retrieveStudentInfoWithCourse(cname);
+	}
+	
 }
