@@ -43,11 +43,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SpringProject"/>
 			<item value="SpringProjects"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringWithHibernate"/>
 			<item value="SpringWithDataSoureApp"/>
 			<item value="DIPureAnnotation"/>
 			<item value="DIUsingAnnotation"/>
