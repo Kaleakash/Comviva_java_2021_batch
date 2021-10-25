@@ -64,3 +64,23 @@ Spring MVC
     <artifactId>spring-orm</artifactId>
     <version>5.2.12.RELEASE</version>
 </dependency>
+
+Basic Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
+
+Web Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
