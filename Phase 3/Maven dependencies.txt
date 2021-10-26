@@ -84,3 +84,19 @@ Web Starter
     <version>2.5.0</version>
 </dependency>
 
+JDBC Starter 
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+    <version>2.5.0</version>
+</dependency>
+
+JPA Starter 
+
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+    <version>2.5.0</version>
+</dependency>

@@ -1,16 +1,16 @@
-package com.main;
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-// it scan by default in current package. 
+
 @SpringBootApplication(scanBasePackages = "com")
 @EntityScan(basePackages = "com.bean")
-public class DemoTest {
+public class SpringBootWithDataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoTest.class, args);
-		System.out.println("Server runing.....");
+		SpringApplication.run(SpringBootWithDataApplication.class, args);
+		System.out.println("Server running");
 	}
 
 }
