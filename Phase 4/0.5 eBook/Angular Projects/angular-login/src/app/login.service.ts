@@ -14,6 +14,7 @@ export class LoginService {
   }
 
   createLogin(login:Login){
-    this.http.post("http://localhost:3000/login",login).subscribe(result=>console.log(result),error=>console.log(error));
+    this.http.post("http://localhost:3000/login",login).
+    subscribe(result=>console.log(result),error=>console.log(error));
   }
 }

@@ -1,0 +1,15 @@
+<div>
+    <h2>Insert Product Details</h2>
+    <form #productRef="ngForm" (ngSubmit)="storeProduct(productRef)">
+        <label>PId</label>
+        <input type="text" name="pid" ngModel/><br/>
+        <label>PName</label>
+        <input type="text" name="pname" ngModel/><br/>
+        <label>Price</label>
+        <input type="text" name="price" ngModel/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    {{insertMsg}}
+</div>
