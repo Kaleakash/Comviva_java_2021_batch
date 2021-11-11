@@ -50,5 +50,11 @@ public class ProductController {
 	public String updateProductPrice(@RequestBody Product pp) {
 		return productService.updateProductPrice(pp);
 	}
-	
+
+	@GetMapping(value = "filterProduct/{min}/{max}",
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Product> getFilterProduct(@PathVariable("min") float minPrice, 
+			@PathVariable("max") float maxPrice) {
+			return productService.getFilterProductInfo(minPrice, maxPrice);
+	}
 }

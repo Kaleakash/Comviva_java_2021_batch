@@ -54,4 +54,8 @@ public class ProductService {
 			return "Record didn't update";
 		}
 	}
+	
+	public List<Product> getFilterProductInfo(float minPrice, float maxPrice) {
+		return productDao.getFilterProduct(minPrice, maxPrice);
+	}
 }
