@@ -18,7 +18,7 @@ import com.bean.Product;
 import com.service.ProductService;
 
 @RestController
-@RequestMapping("product")
+@RequestMapping("product")  // main path
 @CrossOrigin()
 public class ProductController {
 		
