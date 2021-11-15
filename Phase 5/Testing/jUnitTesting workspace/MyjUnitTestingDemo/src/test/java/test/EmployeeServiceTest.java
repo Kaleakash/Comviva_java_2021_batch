@@ -12,7 +12,7 @@ public class EmployeeServiceTest {
 	public void testUpdateSalary() {
 		EmployeeService es = new EmployeeService();
 		float updatedSalary = es.updateSalary(100, "Raj", 45000, "Developer");
-		assertEquals(48000, updatedSalary,2);
+		assertEquals(48000, updatedSalary,0);
 	}
 
 }
