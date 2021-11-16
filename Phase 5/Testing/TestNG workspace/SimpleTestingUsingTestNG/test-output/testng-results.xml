@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="12" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-16T15:48:02 IST" name="Suite" finished-at="2021-11-16T15:48:03 IST" duration-ms="106">
+    <groups>
+    </groups>
+    <test started-at="2021-11-16T15:48:02 IST" name="OperationTest" finished-at="2021-11-16T15:48:02 IST" duration-ms="33">
+      <class name="test.OperationTest">
+        <test-method signature="testDiv()[pri:0, instance:test.OperationTest@3246fb96]" started-at="2021-11-16T15:48:02 IST" name="testDiv" finished-at="2021-11-16T15:48:02 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDiv -->
+        <test-method signature="testMul()[pri:0, instance:test.OperationTest@3246fb96]" started-at="2021-11-16T15:48:02 IST" name="testMul" finished-at="2021-11-16T15:48:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMul -->
+      </class> <!-- test.OperationTest -->
+    </test> <!-- OperationTest -->
+    <test started-at="2021-11-16T15:48:03 IST" name="ProductTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="11">
+      <class name="test.ProductServiceTest">
+        <test-method signature="filterProductTest()[pri:0, instance:test.ProductServiceTest@67c33749]" started-at="2021-11-16T15:48:03 IST" name="filterProductTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterProductTest -->
+        <test-method signature="isExpiriedTest()[pri:0, instance:test.ProductServiceTest@67c33749]" started-at="2021-11-16T15:48:03 IST" name="isExpiriedTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isExpiriedTest -->
+        <test-method signature="searchProductTest()[pri:0, instance:test.ProductServiceTest@67c33749]" started-at="2021-11-16T15:48:03 IST" name="searchProductTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+      </class> <!-- test.ProductServiceTest -->
+    </test> <!-- ProductTest -->
+    <test started-at="2021-11-16T15:48:03 IST" name="LoginTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="2">
+      <class name="test.LoginServiceTest">
+        <test-method signature="checkUserTest()[pri:0, instance:test.LoginServiceTest@bd4dc25]" started-at="2021-11-16T15:48:03 IST" name="checkUserTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserTest -->
+      </class> <!-- test.LoginServiceTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2021-11-16T15:48:03 IST" name="OrganizationTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="6">
+      <class name="test.NonItTeamTest">
+        <test-method signature="getBonusTest()[pri:0, instance:test.NonItTeamTest@4d0f2471]" started-at="2021-11-16T15:48:03 IST" name="getBonusTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBonusTest -->
+        <test-method signature="getGraducationDetailsTest()[pri:0, instance:test.NonItTeamTest@4d0f2471]" started-at="2021-11-16T15:48:03 IST" name="getGraducationDetailsTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGraducationDetailsTest -->
+      </class> <!-- test.NonItTeamTest -->
+      <class name="test.ItTeamTest">
+        <test-method signature="getBonusTest()[pri:0, instance:test.ItTeamTest@32ee6fee]" started-at="2021-11-16T15:48:03 IST" name="getBonusTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBonusTest -->
+        <test-method signature="getSkillSetTest()[pri:0, instance:test.ItTeamTest@32ee6fee]" started-at="2021-11-16T15:48:03 IST" name="getSkillSetTest" finished-at="2021-11-16T15:48:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSkillSetTest -->
+      </class> <!-- test.ItTeamTest -->
+    </test> <!-- OrganizationTest -->
+  </suite> <!-- Suite -->
+</testng-results>
