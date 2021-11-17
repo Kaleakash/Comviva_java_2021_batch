@@ -10,7 +10,7 @@ import com.NonItTeam;
 
 public class NonItTeamTest {
 
-  @Test
+  @Test(groups = {"bonus"})
   public void getBonusTest() {
     //throw new RuntimeException("Test not implemented");
 	  NonItTeam nt = new NonItTeam();
